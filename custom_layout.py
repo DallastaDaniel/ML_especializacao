@@ -1,0 +1,29 @@
+import plotly.express as px
+
+# Define a custom layout dictionary
+custom_layout = {
+    'width': 700,
+    'height': 400,
+    'paper_bgcolor': 'white',
+    'plot_bgcolor': 'white',
+    'font': {'family': 'Palatino', 'size': 12},
+    'xaxis_showgrid': False,
+    'yaxis_showgrid': False,
+    'xaxis_linecolor': 'lightgray',
+    'yaxis_linecolor': 'lightgray',
+    'xaxis_zeroline': False,
+    'xaxis': {'showline': True}
+}
+
+# Set the default template:
+px.defaults.template = 'simple_white'
+
+# Defining a color palette:
+color_discrete_sequence = ['#bdbf09', '#2292a4', 'lightgray', '#CE4760', '#d96c06']
+
+# Create a custom marker style dictionary
+custom_marker_style = {
+    'size': 10,            # Adjust the size as needed
+    'line_width': 1,
+    'opacity': 0.7         # Adjust the opacity as needed
+}
